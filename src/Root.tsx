@@ -1,5 +1,6 @@
 import {Composition} from 'remotion';
-import {MyComposition} from './Composition';
+import {CommnetComposition} from './compositions/Comment.composition';
+
 import './style.css';
 
 export const RemotionRoot: React.FC = () => {
@@ -7,11 +8,11 @@ export const RemotionRoot: React.FC = () => {
 		<>
 			<Composition
 				id="MyComp"
-				component={MyComposition}
-				durationInFrames={240}
+				component={CommnetComposition}
+				durationInFrames={Math.floor(2.12 * 30)}
 				fps={30}
-				width={1280}
-				height={720}
+				width={1080}
+				height={1920}
 			/>
 		</>
 	);
