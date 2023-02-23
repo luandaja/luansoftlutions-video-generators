@@ -3,7 +3,7 @@ import {Comment} from '../components/Comment';
 
 export const CommnetComposition = () => {
 	const {fps, durationInFrames, width, height} = useVideoConfig();
-	const NUMBER_OF_IMAGES = 7;
+	const NUMBER_OF_IMAGES = 14;
 	const fixedArray = Array(NUMBER_OF_IMAGES).fill('a');
 	return (
 		<>
@@ -18,9 +18,7 @@ export const CommnetComposition = () => {
 					<Comment
 						index={i}
 						disappearBeforeEnd={10}
-						imgUrl={staticFile(
-							`assets/sindome-impostor-ingles/comment${i + 1}.png`
-						)}
+						imgUrl={staticFile(`assets/porque-length/comment${i + 1}.png`)}
 					></Comment>
 				</Sequence>
 			))}
