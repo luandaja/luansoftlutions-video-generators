@@ -31,7 +31,7 @@ export const Comment: React.FC<{
 				'height' + index
 			);
 			const randomWidth = getRandomNumber(
-				(width - imageProps.width) * 0.25,
+				(width - imageProps.width) * 0.5,
 				0,
 				'width' + index
 			);
@@ -73,7 +73,6 @@ export const Comment: React.FC<{
 
 	const container: React.CSSProperties = useMemo(() => {
 		return {
-			backgroundColor: 'white',
 			scale: String(scale),
 			translate: `0 ${outY}px`,
 			rotate: `${rotate}rad`,
@@ -97,7 +96,7 @@ export const Comment: React.FC<{
 		>
 			<div
 				style={container}
-				className="absolute bg-white p-0 rounded-xl overflow-hidden border-sky-300 border-4"
+				className="absolute bg-transparent p-0 rounded-xl overflow-hidden border-sky-300 border-4"
 			>
 				<Img src={imgUrl} onLoad={onImgLoad} alt="" />
 			</div>
