@@ -6,6 +6,8 @@
 		"*.css"
 	],
 	"scripts": {
+		"serve:mc": "vite -c motion-canvas/vite.config.ts",
+		"build:mc": "tsc --project motion-canvas/tsconfig.json && vite build -c motion-canvas/vite.config.ts",
 		"start": "remotion preview",
 		"build": "remotion render",
 		"upgrade": "remotion upgrade",
@@ -26,14 +28,19 @@
 		"prettier": "^2.8.1",
 		"style-loader": "^3.3.1",
 		"tailwindcss": "^3.1.6",
-		"typescript": "^4.9.4"
+		"@motion-canvas/ui": "^3.0.1",
+		"@motion-canvas/vite-plugin": "^3.0.0",
+		"typescript": "^4.9.5",
+		"vite": "^3.0.5"
 	},
 	"dependencies": {
 		"@remotion/cli": "3.3.54",
 		"@remotion/google-fonts": "3.3.54",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
-		"remotion": "3.3.54"
+		"remotion": "3.3.54",
+		"@motion-canvas/core": "^3.0.0",
+		"@motion-canvas/2d": "^3.0.2"
 	},
 	"packageManager": "npm@8.19.3"
 }
