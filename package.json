@@ -8,6 +8,7 @@
 	"scripts": {
 		"serve:mc": "vite -c motion-canvas/vite.config.ts",
 		"build:mc": "tsc --project motion-canvas/tsconfig.json && vite build -c motion-canvas/vite.config.ts",
+		"render:mc": "ffmpeg -framerate 30 -pattern_type glob -i './out/motion-canvas/project/*.webp' -c:v libx264 -pix_fmt yuv420p './out/mc-project.mp4'",
 		"start": "remotion preview",
 		"build": "remotion render",
 		"upgrade": "remotion upgrade",
@@ -39,8 +40,8 @@
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
 		"remotion": "3.3.54",
-		"@motion-canvas/core": "^3.0.0",
-		"@motion-canvas/2d": "^3.0.2"
+		"@motion-canvas/core": "^3.2.0",
+		"@motion-canvas/2d": "^3.2.0"
 	},
 	"packageManager": "npm@8.19.3"
 }

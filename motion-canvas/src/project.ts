@@ -1,7 +1,7 @@
 import {makeProject} from '@motion-canvas/core';
 
-import {htmlH1Anchor} from './scenes';
+import {arrayAt, test} from './scenes';
 
 export default makeProject({
-	scenes: [htmlH1Anchor],
+	scenes: [arrayAt],
 });

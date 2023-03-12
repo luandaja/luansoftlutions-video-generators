@@ -17,10 +17,10 @@
     "resolutionScale": 1
   },
   "rendering": {
-    "fps": 60,
-    "resolutionScale": 2,
+    "fps": 30,
+    "resolutionScale": 1,
     "colorSpace": "srgb",
-    "fileType": "image/png",
+    "fileType": "image/webp",
     "quality": 1
   }
 }
