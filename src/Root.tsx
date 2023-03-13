@@ -1,4 +1,5 @@
-import {Composition} from 'remotion';
+import {Composition, Still} from 'remotion';
+import {TeachMethod} from './components/TeachMethod';
 import {MultipleCommmentsFromImagesComposition} from './compositions/MultipleComments.composition';
 
 import './style.css';
@@ -10,6 +11,12 @@ const COMPOSITION_DEFAULT = {
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
+			<Composition
+				id="array-at"
+				component={TeachMethod}
+				durationInFrames={Math.floor(3 * 30)}
+				{...COMPOSITION_DEFAULT}
+			/>
 			<Composition
 				id="sindome-impostor-ingles"
 				component={MultipleCommmentsFromImagesComposition}

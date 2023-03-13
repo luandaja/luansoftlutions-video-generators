@@ -1,7 +1,10 @@
 module.exports = {
 	content: ['./src/**/*.{ts,tsx}'],
 	theme: {
-		extend: {},
+		fontSize: {
+			normal: ['3rem'],
+		},
+		extends: {},
 	},
-	plugins: [],
+	plugins: [require('daisyui')],
 };
