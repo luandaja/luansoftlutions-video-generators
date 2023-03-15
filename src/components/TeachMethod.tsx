@@ -8,7 +8,7 @@ export const TeachMethod: React.FC<{}> = () => {
 				className="absolute w-full opacity-50"
 			/> */}
 			<AbsoluteFill
-				className="glass px-[3em] pt-[15em] pb-[17em]"
+				className="glass px-[4em] pt-[16em] pb-[17em]"
 				style={{backgroundColor: undefined}}
 			>
 				{/* <div className="mockup-code">
@@ -21,18 +21,24 @@ export const TeachMethod: React.FC<{}> = () => {
 						</pre>
 					</div>
 				</div> */}
-				<div className="avatar py-3">
-					<div className="mask mask-squircle w-4/12 bg-green-500 "></div>
-				</div>
 				<div className="mockup-code h-full w-12/12 bg-[#1a1a1a]">
-					<div className="text-normal pl-8 ">
+					<div className="text-normal-s pl-8 ">
 						<pre data-prefix="$" className="">
-							<code>Array.prototype.at()</code>
+							<code>
+								Array.prototype
+								<b>.copyWithin()</b>
+							</code>
 						</pre>
 						<pre data-prefix=">" className="text-warning">
-							<code>syntax: at(index)</code>
+							<code>syntax:</code>
+						</pre>
+						<pre data-prefix=">" className="text-warning">
+							<code>copyWithin(target,[start],[end])</code>
 						</pre>
 					</div>
+				</div>
+				<div className="avatar py-3 justify-around w-5/6">
+					<div className="outline outline-8 outline-double outline-[#1a1a1a] rounded-full w-5/12  bg-green-500 "></div>
 				</div>
 			</AbsoluteFill>
 			{/* <img
